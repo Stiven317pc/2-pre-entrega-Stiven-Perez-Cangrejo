@@ -1,0 +1,305 @@
+/*
+--------------------------------------------------INICIO ROOT-------------------------------------
+*/
+:root
+{
+    --bg-color-1-: #fff; 
+    --bg-color-2-: #333;
+}
+/*
+----------------------------------------------------FIN ROOT--------------------------------------
+*/
+
+/*
+-------------------------------------------INICIO DE CSS COMPARTIDO--------------------------------
+*/
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header 
+{
+    background-color: #7e7e7e;
+    padding: 10;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav 
+{
+    
+    background-color: #444;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;text-align: center;
+    font-style: normal;
+}
+
+a 
+{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover 
+{
+    background-color: #555;
+}
+
+section 
+{
+    padding: 10px;
+    background-color: var(--bg-color-1-);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+h1, h2 
+{
+    color: var(--bg-color-2-);
+}
+
+footer 
+{
+    text-align: left;
+    padding: 15px;
+    background-color: var(--bg-color-2-);
+    color: var(--bg-color-1-);
+    font-size: 10px;
+}
+
+.texto
+{
+    background-color: var(--bg-color-1-);
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.logo 
+{
+    max-width: 50px;
+    height: auto; 
+    position: absolute;
+    float: left;
+    top: 10px; 
+    left: 10px; 
+}
+
+/*
+--------------------------------------------FIN DE CSS COMPARTIDO----------------------------------
+*/
+
+/*
+-----------------------------------------------INICIO DE INDEX-------------------------------------
+*/
+
+.img-derecha
+{
+    float: right; /* imagen a la derecha */
+    width: 210px; /* ancho de la imagen */
+    margin-left: 30px;
+}
+
+.img-izquierda
+{
+    margin-top: -0;
+    float: left; /* imagen a la izquierda */
+    width: 190px;
+    height: 122px;
+    margin-right: 30px ;
+}
+
+.sectionmargen
+{
+    padding: 20px;
+    background-color: var(--bg-color-1-);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.moron
+{
+    color: rgb(0, 56, 240);
+    padding: 0;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.moron:hover
+{
+    background: transparent;
+}
+
+/*
+-----------------------------------------------FIN DE INDEX-------------------------------------
+*/
+
+/*
+------------------------------------------INICIO DE DISCOGRAFIA---------------------------------
+*/
+
+.divcontenedor
+{
+    padding: 10px;
+    background-color: var(--bg-color-1-);
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.textodis
+{
+    background-color: var(--bg-color-1-);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.img-derechadis
+{
+    float: right; /* imagen a la derecha */
+    width: 200px; /* ancho de la imagen */
+    margin-left: 30px;
+    height: 150px;
+}
+
+.imgalbum
+{
+    margin-top: 15;
+    float: right; /* imagen a la izquierda */
+    width: 30%;
+    height: 60%;
+    margin-right: 30px ;
+    border-radius: 5%;
+}
+
+ol
+{
+    clear: both; 
+    margin-top: 10px;
+    list-style-position: inside;
+    padding-left: 0;
+    display: inline-block; 
+}
+
+.canciones
+{
+    color: rgb(2, 2, 2);
+    padding: 0;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0;
+
+}
+
+.canciones:hover
+{
+    background: transparent;
+}
+
+/*
+------------------------------------------FIN DE DISCOGRAFIA---------------------------------
+*/
+
+/*
+----------------------------------- -----INICIO DE CONCIERTOS--------------------------------
+*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+    color: var(--bg-color-1-);
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-color-1-);
+}
+
+.img-concierto
+{    
+    display: block; 
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    height: auto
+}
+
+.video
+{
+    width: 569px;
+    height: 350px;
+}
+/*
+----------------------------------------FIN DE CONCIERTOS--------------------------------
+*/
+
+/*
+---------------------------------------------MOBILE--------------------------------------
+ */
+@media (max-width: 768px) 
+{
+    header
+    {
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .logo 
+    {
+        max-width: 40px;
+    }
+
+    nav a 
+    {
+        padding: 10px;
+        font-size: 24px;
+    }
+
+    section, .sectionmargen, .divcontenedor, .textodis
+    {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .img-derecha, .img-derechadis, .imgalbum 
+    {
+        float: inline-end;
+        width: 45%;
+        height: 40%;
+        margin: 10px 0;
+    }
+
+    table, th, td 
+    {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .video 
+    {
+        width: 100%;
+        height: auto;
+    }
+}
