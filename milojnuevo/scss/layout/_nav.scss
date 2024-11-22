@@ -1,0 +1,39 @@
+/* Estilos para el contenedor del <nav> */
+nav 
+{
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #1e273a;
+    padding: 20px;
+}
+
+/* Estilos para la lista */
+nav ul 
+{
+    display: flex;
+    list-style: none; /* Elimina puntos de la lista */
+}
+
+/* Estilos para los elementos de la lista */
+nav ul li 
+{
+    margin: 0 20px; /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces */
+nav ul li a 
+{
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    color: var(--bg-color-2-); /* Cambia el color del texto en el nav */
+    font-weight: bold;
+    transition: font-size 0.2s ease, border 0.1s ease; /* Transición para el tamaño de la fuente y el borde */
+}
+
+/* Estilo al pasar el cursor sobre los enlaces */
+nav ul li a:hover 
+{
+    font-size: 18px; /* Aumenta el tamaño de la fuente al pasar el mouse */
+    border: 2px solid var(--bg-color-2-); /* Aumenta el grosor del borde */
+    color: #8f8c89; /* Cambia el color del texto hover */
+
+}

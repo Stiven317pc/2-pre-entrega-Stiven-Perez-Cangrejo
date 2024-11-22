@@ -1,0 +1,447 @@
+/*
+--------------------------------------------------INICIO ROOT-------------------------------------
+*/
+:root
+{
+    --bg-color-1-: #000000; 
+    --bg-color-2-: #ffffff;
+}
+/*
+----------------------------------------------------FIN ROOT--------------------------------------
+*/
+
+/*
+-------------------------------------------INICIO DE CSS COMPARTIDO--------------------------------
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-header 
+{
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Alinea las cosas vertical */
+    justify-content: space-between; /* Espacio los elementos horizontalmente */
+    padding: 10px; /* Agrega poco de espacio interno */
+    background-color: var(--bg-color-1-); 
+}
+
+.flex-header img 
+{
+    max-height: 50px; /* Ajusta tamaño del logo */
+}
+
+.flex-header h1
+{
+    position: absolute; /* centrar el título sin afectar otros elementos */
+    left: 50%; /* Mueve el título horizontalmente */
+    transform: translateX(-50%); /* centrarlo completamente si o si */
+    font-size: 1.5em;
+    color: var(--bg-color-2-);
+}
+
+/* Estilos para el contenedor del <nav> */
+nav 
+{
+    display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #1e273a;
+    padding: 20px;
+}
+
+/* Estilos para la lista */
+nav ul 
+{
+    display: flex;
+    list-style: none; /* Elimina puntos de la lista */
+}
+
+/* Estilos para los elementos de la lista */
+nav ul li 
+{
+    margin: 0 20px; /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces */
+nav ul li a 
+{
+    text-decoration: none; /* Elimina subrayado de los enlaces */
+    color: var(--bg-color-2-); /* Cambia el color del texto en el nav */
+    font-weight: bold;
+    transition: font-size 0.2s ease, border 0.1s ease; /* Transición para el tamaño de la fuente y el borde */
+}
+
+/* Estilo al pasar el cursor sobre los enlaces */
+nav ul li a:hover 
+{
+    font-size: 18px; /* Aumenta el tamaño de la fuente al pasar el mouse */
+    border: 2px solid var(--bg-color-2-); /* Aumenta el grosor del borde */
+    color: #8f8c89; /* Cambia el color del texto hover */
+
+}
+
+footer
+{
+    color: var(--bg-color-2-);
+    background-color: var(--bg-color-1-);
+    padding: 20px;
+}
+
+/*
+--------------------------------------------FIN DE CSS COMPARTIDO----------------------------------
+*/
+
+/*
+-----------------------------------------------INICIO DE INDEX-------------------------------------
+*/
+section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse; /* Cambia la dirección del texto a derecha-izquierda */
+    padding: 100px;
+    background-color: #fff4df;
+}
+
+.content {
+    display: flex; /* Activa Flexbox dentro del div */
+    flex-direction: column; /* Coloca los párrafos en una columna */
+    max-width: 50%; /* Limita el ancho del texto */
+    margin-right: 5%;
+    padding: 30px;
+}
+
+section img 
+{
+    max-width: 40%; 
+    height: 50%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+section h2 
+{
+    margin: 10px 10; /* Espacio alrededor del título */
+    font-size: 3.9em; /* Tamaño del título */
+}
+
+section p 
+{
+    margin: 10px 10; /* Espacio entre los párrafos */
+    line-height: 1.6; /* Mejora el leer del texto */
+    font-size: 1.1em;
+}
+
+.sectionmargen
+{
+    display: flex; /* Activa Flexbox */
+    justify-content: flex-start;
+    flex-direction: row-reverse; /* Cambia la dirección a derecha-izquierda */
+    padding: 100px;
+    background-color: #ffc04c;
+}
+
+/*
+-----------------------------------------------FIN DE INDEX-------------------------------------
+*/
+
+/*
+------------------------------------------INICIO DE DISCOGRAFIA---------------------------------
+*/
+.disc
+{
+    display: flex;
+    background-color: #63e952;
+}
+
+.disc-img
+{
+    height: 80%;
+    width: 80%;
+    margin-top: 80px;
+    margin-right: 10%;
+}
+
+.div-content
+{
+    display: flex; /* Activa Flexbox dentro del div */
+    flex-direction: column; /* Coloca los párrafos en una columna */
+    max-width: 50%; /* Limita el ancho del texto */
+    margin-right: 10%;
+    padding: 30px;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+.container 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card 
+{
+    background: var(--bg-color-2-);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover 
+{
+    transform: translateY(-10px);
+}
+
+.card img 
+{
+    width: 100%;
+    height: auto;
+}
+
+.card-content 
+{
+    padding: 15px;
+}
+
+.card-title 
+{
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.card-text 
+{
+    font-size: 14px;
+    color: #555;
+}
+
+.link
+{
+    color: #000000;
+}
+
+/*
+------------------------------------------FIN DE DISCOGRAFIA---------------------------------
+*/
+
+/*
+----------------------------------- -----INICIO DE CONCIERTOS--------------------------------
+*/
+
+.img-concert
+{
+    max-width: 40%;
+    height: 400px;
+    margin-top: 60px;
+}
+
+/* Tabla */
+table 
+{
+    width: 100%; /* Ocupa todo el ancho de la página */
+    max-width: 100%; 
+    border-collapse: collapse; /* Quita bordes duplicados */
+    background: var(--bg-color-2-);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Filas y celdas */
+th, td 
+{
+    padding: 20px; /* Espaciado interno */
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes gruesos*/
+}
+
+th 
+{
+    background-color: #ff758c;
+    color: var(--bg-color-2-);
+    font-size: 20px; /* Texto más grande */
+}
+
+td 
+{
+    font-size: 18px;
+    color: #333; 
+}
+
+/* Efecto al pasar el cursor */
+tr:hover 
+{
+    background-color: #f2f2f2;
+}
+
+/* Título de la tabla */
+caption 
+{
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+    text-align: center;
+}
+
+/*
+----------------------------------------FIN DE CONCIERTOS--------------------------------
+*/
+
+/*
+---------------------------------------------MOBILE--------------------------------------
+ */
+
+@media only screen and (max-width: 768px) {
+    /* Header */
+    .flex-header 
+    {
+        display: flex;
+        align-items: center; /* Centrado vertical */
+        padding: 10px;
+    }
+
+    /* Título h1 */
+    .flex-header h1 
+    {
+        text-align: center; /* Centra el texto */
+        width: 100%; 
+    }
+
+    section
+    {
+        flex-direction: column; 
+        padding: 20px; /* Espaciado interno */
+        align-items: center; 
+        
+    }
+
+    section img 
+    {
+        max-width: 80%; 
+        margin: 20px 0; 
+        
+    }
+
+    section h2 
+    {
+        font-size: 2.2em; /* tamaño del título */
+        text-align: center;
+    }
+
+    section p 
+    {
+        font-size: 1em; 
+        margin: 10px 0; /* Ajusta el espacio entre párrafos */
+        text-align: justify; /* texto justificado */
+    }
+
+    .disc, .sectionmargen 
+    {
+        flex-direction: column; 
+        padding: 20px; 
+        align-items: center; 
+    }
+
+    .disc-img, .sectionmargen img 
+    {
+        max-width: 80%; 
+        height: auto; /* Mantén proporción */
+        margin: 20px 0; 
+    }
+
+    .div-content, .content 
+    {
+        max-width: 85%; /* Ancho máximo del texto */
+        margin: 0 auto; /* Centra el texto */
+        line-height: 1.5; /* Mejora la lectura */
+    }
+
+    .div-content h2, .content h2 
+    {
+        font-size: 2.2em; /* Ajusta el tamaño del título */
+    }
+
+    .div-content p, .content p 
+    {
+        font-size: 1em; /* Texto más pequeño */
+        margin: 10px 0; 
+    }
+
+    .disc-img 
+    {
+        max-width: 30%; 
+        height: auto; 
+        margin-top: 20px; /* Espaciado superior */
+        margin-right: 5%; 
+        border-radius: 10px; /* Redondea las esquinas */
+    }
+
+    .content 
+    {
+        max-width: 100%; /* El texto ocupa todo el ancho en telefonos */
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 20px; /* Espaciado entre las cards */
+        padding: 20px;
+        align-items: center; 
+    }
+
+    .card 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--bg-color-2-);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: visible;
+        width: 100%; /* Ocupa el ancho completo */
+        max-width: 300px; /* Limita el tamaño máximo de las cards */
+        height: auto; 
+        transition: transform 0.3s ease;
+    }
+
+    .card-content 
+    {
+        padding: 15px;
+        text-align: center; /* Centra el texto dentro de la card */
+    }
+
+    .card-title 
+    {
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+
+    .card-text 
+    {
+        font-size: 14px;
+        color: #555;
+        word-wrap: break-word; /* Evita que el texto se salga de los límites */
+        white-space: normal; /* Asegura que las líneas largas se ajusten */
+    }
+
+    nav ul li 
+    {
+        margin: 0 10px;  /* Ajusta el espacio entre los elementos */
+    }
+
+    .img-concert 
+    {
+        height: auto;
+    }
+}
+
+
