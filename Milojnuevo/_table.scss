@@ -1,0 +1,53 @@
+.img-concert
+{
+    max-width: 40%;
+    height: 400px;
+    margin-top: 60px;
+}
+
+/* Tabla */
+table 
+{
+    width: 100%; /* Ocupa todo el ancho de la página */
+    max-width: 100%; 
+    border-collapse: collapse; /* Quita bordes duplicados */
+    background: var(--bg-color-2-);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Filas y celdas */
+th, td 
+{
+    padding: 20px; /* Espaciado interno */
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes gruesos*/
+}
+
+th 
+{
+    background-color: #ff758c;
+    color: var(--bg-color-2-);
+    font-size: 20px; /* Texto más grande */
+}
+
+td 
+{
+    font-size: 18px;
+    color: #333; 
+}
+
+/* Efecto al pasar el cursor */
+tr:hover 
+{
+    background-color: #f2f2f2;
+}
+
+/* Título de la tabla */
+caption 
+{
+    caption-side: top;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #444;
+    text-align: center;
+}
