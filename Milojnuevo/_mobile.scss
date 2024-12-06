@@ -1,0 +1,134 @@
+@media only screen and (max-width: 768px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Oculta el scroll horizontal */
+    }
+    
+    /* Header */
+    .flex-header {
+        display: flex;
+        align-items: center; /* Centrado vertical */
+        justify-content: space-between; /* Separa texto e icono */
+        padding: 30px 10px;
+    }
+
+    /* Título h1 */
+    .flex-header h1 {
+        flex: 1; /* Ocupa todo el espacio disponible */
+        text-align: center; /* Centra el texto */
+        margin: 0; /* Elimina márgenes adicionales */
+    }
+
+    /* Icono o imagen en el header */
+    .flex-header img {
+        max-width: 40px; /* Tamaño adecuado para iconos */
+        height: auto;
+        margin-left: 10px; /* Espacio entre texto e icono */
+    }
+    
+    /* Secciones generales */
+    section {
+        display: flex;
+        flex-direction: column; /* Dirección vertical */
+        align-items: center;
+        padding: 20px; /* Espaciado interno */
+    }
+
+    section img {
+        max-width: 80%;
+        margin: 20px 0;
+        height: auto; /* Mantén proporción */
+    }
+
+    section h2 {
+        font-size: 2.2em; /* Tamaño del título */
+        text-align: center;
+    }
+
+    section p {
+        font-size: 1em;
+        margin: 10px 0; /* Espaciado entre párrafos */
+        text-align: justify; /* Texto justificado */
+    }
+
+    /* Sección específica (disc / sectionmargen) */
+    .disc, .sectionmargen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .disc-img, .sectionmargen img {
+        max-width: 80%; 
+        height: auto;
+        margin: 20px 0;
+    }
+
+    /* Contenido de texto */
+    .div-content, .content {
+        max-width: 85%; /* Ancho máximo */
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center; /* Centra el contenido */
+        line-height: 1.5; /* Espaciado entre líneas */
+    }
+
+    .div-content h2, .content h2 {
+        font-size: 2.2em;
+    }
+
+    .div-content p, .content p {
+        font-size: 1em;
+        margin: 10px 0;
+    }
+
+    /* Cards */
+    .container {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las cards se ajusten */
+        justify-content: center;
+        gap: 20px; /* Espaciado entre las cards */
+        padding: 20px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        max-width: 300px; /* Tamaño máximo */
+        background: var(--bg-color-2-);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .card-content {
+        padding: 15px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        color: #555;
+        word-wrap: break-word; /* Ajusta texto largo */
+    }
+
+    /* Navegación */
+    nav ul li {
+        margin: 0 10px; /* Espaciado entre elementos */
+    }
+
+    /* Imágenes generales */
+    .img-concert {
+        max-width: 100%;
+        height: auto;
+    }
+}
